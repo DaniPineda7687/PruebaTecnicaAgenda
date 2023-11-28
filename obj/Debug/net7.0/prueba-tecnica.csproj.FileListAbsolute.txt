@@ -1,0 +1,17 @@
+/home/danielpineda/prueba-tecnica/bin/Debug/net7.0/prueba-tecnica
+/home/danielpineda/prueba-tecnica/bin/Debug/net7.0/prueba-tecnica.deps.json
+/home/danielpineda/prueba-tecnica/bin/Debug/net7.0/prueba-tecnica.runtimeconfig.json
+/home/danielpineda/prueba-tecnica/bin/Debug/net7.0/prueba-tecnica.dll
+/home/danielpineda/prueba-tecnica/bin/Debug/net7.0/prueba-tecnica.pdb
+/home/danielpineda/prueba-tecnica/obj/Debug/net7.0/prueba-tecnica.csproj.AssemblyReference.cache
+/home/danielpineda/prueba-tecnica/obj/Debug/net7.0/prueba-tecnica.GeneratedMSBuildEditorConfig.editorconfig
+/home/danielpineda/prueba-tecnica/obj/Debug/net7.0/prueba-tecnica.AssemblyInfoInputs.cache
+/home/danielpineda/prueba-tecnica/obj/Debug/net7.0/prueba-tecnica.AssemblyInfo.cs
+/home/danielpineda/prueba-tecnica/obj/Debug/net7.0/prueba-tecnica.csproj.CoreCompileInputs.cache
+/home/danielpineda/prueba-tecnica/obj/Debug/net7.0/prueba-tecnica.dll
+/home/danielpineda/prueba-tecnica/obj/Debug/net7.0/refint/prueba-tecnica.dll
+/home/danielpineda/prueba-tecnica/obj/Debug/net7.0/prueba-tecnica.pdb
+/home/danielpineda/prueba-tecnica/obj/Debug/net7.0/prueba-tecnica.genruntimeconfig.cache
+/home/danielpineda/prueba-tecnica/obj/Debug/net7.0/ref/prueba-tecnica.dll
+/home/danielpineda/prueba-tecnica/bin/Debug/net7.0/Newtonsoft.Json.dll
+/home/danielpineda/prueba-tecnica/obj/Debug/net7.0/prueba-tecnica.csproj.CopyComplete

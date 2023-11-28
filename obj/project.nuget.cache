@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "SQGclPAKFvgfJyjXazdFLbfb3M03TLnGYosUib9xXurz+jfcDMmlkegJ5vCXJOzKTy4JzQTuQjldT1UsCJC61g==",
+  "success": true,
+  "projectFilePath": "/home/danielpineda/prueba-tecnica/prueba-tecnica.csproj",
+  "expectedPackageFiles": [
+    "/home/danielpineda/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
