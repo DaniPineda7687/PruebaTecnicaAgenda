@@ -8,6 +8,8 @@ public class Agenda
 
     public const string HORA_INICIO_SERVICIO = "09:00";
     public const string HORA_FINAL_SERVICIO = "17:00";
+    public const int DURACION_MINIMA_SERVICIO = 30;
+    public const int TOTAL_MINUTOS_HORA = 60;
 
 
     public int GetTotalCitasDisponibles(string dia)
@@ -30,12 +32,12 @@ public class Agenda
             {
                 if (horaProximaFormatted.Item2 <= horaFinServicioFormatted.Item2)
                 {
-                    totalCitasDisponibles += tiempoTotal / 30;
+                    totalCitasDisponibles += tiempoTotal / DURACION_MINIMA_SERVICIO;
                 }
             }
             else
             {
-                totalCitasDisponibles += tiempoTotal / 30;
+                totalCitasDisponibles += tiempoTotal / DURACION_MINIMA_SERVICIO;
             }
 
 
@@ -68,6 +70,10 @@ public class Agenda
         foreach(Cita cita in allCitas)
         {
             var horaInicioFormatted = GetHoraMinutosFromString(cita.Hour);
+            if(horaInicioFormatted.Item1>horaFinServicioFormatted.Item1)
+            {
+                continue;
+            }
             if(horaInicioFormatted.Item1 == horaFinServicioFormatted.Item1)
             {
                 if(horaInicioFormatted.Item2 > horaFinServicioFormatted.Item2)
@@ -91,7 +97,7 @@ public class Agenda
         int tempNewHour = horaFinFormatted.Item1 - horaInicioFormatted.Item1;
         int tempNewMinute = horaFinFormatted.Item2 - horaInicioFormatted.Item2;
 
-        int minutosTotalesEntreHoras = (tempNewHour * 60) + tempNewMinute;
+        int minutosTotalesEntreHoras = (tempNewHour * TOTAL_MINUTOS_HORA) + tempNewMinute;
 
         return minutosTotalesEntreHoras;
     }
@@ -106,9 +112,9 @@ public class Agenda
 
         int finalMinute = duracion + horaInicioFormatted.Item2;
 
-        if (finalMinute >= 60)
+        if (finalMinute >= TOTAL_MINUTOS_HORA)
         {
-            int tempNewMinute = finalMinute - 60;
+            int tempNewMinute = finalMinute - TOTAL_MINUTOS_HORA;
             int tempNewHour = ++horaInicioFormatted.Item1;
             return GetHoraFinalCita($"{tempNewHour}:{tempNewMinute}", "0");
         }

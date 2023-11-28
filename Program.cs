@@ -1,4 +1,4 @@
 ﻿using CitasAgenda;
 
 Agenda agenda = new Agenda();
-Console.WriteLine(agenda.GetTotalCitasDisponibles("lunes"));
+Console.WriteLine(agenda.GetTotalCitasDisponibles("martes"));
